@@ -10,7 +10,8 @@
 
 @if (@Model.Machines.Count == 0)
 {
-  <h4>This engineer is not licensed of our machines</h4>
+  <h4>This engineer is not licensed for any of our machines</h4>
+  <button class="btn btn-primary btn-md" onclick="location.href='@Url.Action("AddMachine", new { id = Model.EngineerId })'">Add a license</button>
 }
 else
 {
