@@ -7,3 +7,11 @@ body {
   text-align: center;
   margin-left: 125px;
 }
+
+.labelBoxSpace {
+  margin-right: 5px;
+}
+
+.boxToNextSpace {
+  margin-right: 30px
+}
