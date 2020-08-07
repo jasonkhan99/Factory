@@ -1,0 +1,34 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer;
+
+<h2>Engineer Details</h2>
+<hr />
+<h3>@Html.DisplayFor(model => model.Name):</h3>
+
+@if (@Model.Machines.Count == 0)
+{
+  <h4>This engineer is not licensed of our machines</h4>
+}
+else
+{
+  <h4>Machine Licenses</h4>
+  <ul>
+  @foreach (var join in @Model.Machines)
+  {
+    <li>@join.Machine.Name</li>
+    @using (Html.BeginForm("DeleteMachine", "Engineers"))
+    {
+      @Html.Hidden("joinId", @join.MachineEngineerId)
+      <input type="submit" class="btn btn-warning btn-md" value="Remove License"/>
+    }
+  }
+  </ul>
+}
+
+<button class="btn btn-warning btn-md" onclick="location.href='@Url.Action("Index")'">Back to engineers</button>
+<br>
+<br>
+<button class="btn btn-danger btn-md" onclick="location.href='@Url.Action("Delete", new { id = Model.EngineerId })'">Remove Engineer</button>
