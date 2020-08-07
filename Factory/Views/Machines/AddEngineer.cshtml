@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h4>Add a licensed engineer for: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.MachineId)
+
+    @Html.Label("Select Engineer")
+    @Html.DropDownList("EngineerId")
+
+    <input type="submit" value="Add License" />
+}
+
+<button class="btn btn-warning btn-md" onclick="location.href='@Url.Action("Details")'">Back to details</button>
