@@ -1,9 +1,10 @@
 body {
-  background-color: rgb(212, 195, 172);
+  background-color: rgb(73, 87, 107);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .col-sm-4 {
-  background-color: honeydew;
   text-align: center;
   margin-left: 125px;
 }
@@ -14,4 +15,16 @@ body {
 
 .boxToNextSpace {
   margin-right: 30px
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  color: white;
+}
+
+li {
+  color: white;
 }
