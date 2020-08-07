@@ -14,12 +14,9 @@ _You've been contracted by the factory of the famous Dr. Sneuss to build an appl
   2. Click on the "Clone or download" button to copy the project.     
   3. If you know how to use the command line and Github, clone the project with `git clone`. Use "**Download ZIP**" if not.
   4. Extract the Zip to a folder of your choice and open with a code editor (i.e. vscode)
-  5. Import the .sql file into a SQL Manager as a Database. In mySQL Workbench you import from self-contained file and select the .sql file
-  6. Make sure your database matches this Schema:  
-
-
-
-  7. Navigate to the Factory directory by entering `cd` **Your Filepath/**`Factory`. Then enter `dotnet restore`, `dotnet build`, and `dotnet run` into the terminal.
+  5. Use a SQL Manager Database such as mySQL Workbench.
+  6. Change the appsettings.json file to use your own first and last name and password 
+  6. Navigate to the Factory directory by entering `cd` **Your Filepath/**`Factory`. Then enter `dotnet restore`, `dotnet build`, `dotnet dotnet ef migrations add _Your_Name_`, `dotnet ef database update` then `dotnet run` into the terminal.
 
 ## Known Bugs
 
