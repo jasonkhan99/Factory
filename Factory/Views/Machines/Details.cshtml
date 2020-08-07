@@ -11,7 +11,6 @@
 @if(@Model.Engineers.Count == 0)
 {
   <p>This machine does have any engineers with licenses to operate</p>
-  <button class="btn btn-primary btn-md" onclick="location.href='@Url.Action("AddMachine", new { id = Model.MachineId })'">Add a license</button>
 }
 else
 {
@@ -29,6 +28,9 @@ else
   </ul>
 }
 
+<button class="btn btn-primary btn-md" onclick="location.href='@Url.Action("AddMachine", new { id = Model.MachineId })'">Add a license</button>
+<br>
+<br>
 <button class="btn btn-warning btn-md" onclick="location.href='@Url.Action("Index")'">Back to machines</button>
 <br>
 <br>
