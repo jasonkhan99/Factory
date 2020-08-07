@@ -1,0 +1,31 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-sm-4">
+      <div class="card text-center">
+        <img src='~/img/engineer.jpg' class="card-img-top" alt="engineers">
+        <div class="card-body">
+          <h5 class="card-title">Engineering</h5>
+          <p class="card-text">Manage the Engineering team.<br>Add new eployees.<br>Keep track of contracts.</p>
+          <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("Index", "engineers")'">See all Engineers</button>
+        </div>
+        <div class="card-footer text-muted">
+          Last Update: 8/07/2020
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 offset-sm-2">
+      <div class="card text-center">
+        <img src='~/img/machine.jpg' class="card-img-top" alt="machines">
+        <div class="card-body">
+          <h5 class="card-title">Machinery</h5>
+          <p class="card-text">Keep track of hardware.<br>Add new machines.<br>List repair qualifications.</p>
+          <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("Index", "machines")'">See all Machines</button>
+        </div>
+        <div class="card-footer text-muted">
+          Last Update: 8/07/2020
+        </div>
+      </div>
+    </div>

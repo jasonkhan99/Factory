@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(212, 195, 172);
+}
+
+.col-sm-4 {
+  background-color: honeydew;
+  text-align: center;
+  margin-left: 125px;
+}
